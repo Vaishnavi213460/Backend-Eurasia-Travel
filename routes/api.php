@@ -6,7 +6,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\TravelController;
 use App\Http\Controllers\Api\EnquiryController;
 
-Route::post('/authregister',[AuthController::class,'register']);
+Route::post('/auth/register',[AuthController::class,'register']);
 Route::post('/auth/login',[AuthController::class,'login']);
 Route::post('/auth/verify-email', [AuthController::class, 'verifyEmail']);
 Route::post('/auth/forgot-password', [AuthController::class, 'forgotPassword']);
